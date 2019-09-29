@@ -13,9 +13,9 @@ from prepare_data import prepare_data
 from utilities import filter_df_by_date, pick_factor_within_period, Stock_to_buy, CalcReturns,max_drawdown,\
     pick_factor_within_period_DoW,Stock_to_buy_DOW,pick_factor_within_period_QuadProg
 
-# New_Factor_df_date, Idxrtn_series= prepare_data()
-# New_Factor_df_date.to_csv('New_Factor_df_date.csv')
-# Idxrtn_series.to_csv('Idxrtn_series.csv')
+New_Factor_df_date, Idxrtn_series= prepare_data()
+New_Factor_df_date.to_csv('New_Factor_df_date.csv')
+Idxrtn_series.to_csv('Idxrtn_series.csv')
 
 # Always needed!
 New_Factor_df_date = pd.read_csv('New_Factor_df_date.csv',index_col=0)
